@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Mar 10 14:20:01 2017
+# Process ID: 3388
+# Log file: D:/dsdlab/friday/250_202/lab5/lab5_1/lab5_1.sim/sim_1/behav/webtalk.log
+# Journal file: D:/dsdlab/friday/250_202/lab5/lab5_1/lab5_1.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source D:/dsdlab/friday/250_202/lab5/lab5_1/lab5_1.sim/sim_1/behav/xsim.dir/int2vectest_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 63.750 ; gain = 0.023
+
+    while executing
+"webtalk_transmit -clientid 995973806 -regid "174203868_208276356_210637632_521" -xml D:/dsdlab/friday/250_202/lab5/lab5_1/lab5_1.sim/sim_1/behav/xsim...."
+    (file "D:/dsdlab/friday/250_202/lab5/lab5_1/lab5_1.sim/sim_1/behav/xsim.dir/int2vectest_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 10 14:20:15 2017...

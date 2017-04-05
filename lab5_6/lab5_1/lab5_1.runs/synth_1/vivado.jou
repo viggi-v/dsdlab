@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Mar 10 14:21:39 2017
+# Process ID: 3020
+# Log file: D:/dsdlab/friday/250_202/lab5/lab5_1/lab5_1.runs/synth_1/int2vectest.vds
+# Journal file: D:/dsdlab/friday/250_202/lab5/lab5_1/lab5_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source int2vectest.tcl -notrace

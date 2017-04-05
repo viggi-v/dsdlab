@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Mar 30 14:29:14 2017
+# Process ID: 5548
+# Log file: D:/dsdlab/friday/250_202/lab 8/Image_cryption/Image_cryption.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.vds
+# Journal file: D:/dsdlab/friday/250_202/lab 8/Image_cryption/Image_cryption.runs/blk_mem_gen_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source blk_mem_gen_0.tcl -notrace

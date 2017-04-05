@@ -1,0 +1,82 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Fri Feb 10 16:32:59 2017
+| Host         : dsp7 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file centurycounter_control_sets_placed.rpt
+| Design       : centurycounter
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    29 |
+| Minimum Number of register sites lost to control set restrictions |   193 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              31 |           11 |
+| No           | No                    | Yes                    |              16 |           16 |
+| No           | Yes                   | No                     |               8 |            8 |
+| Yes          | No                    | No                     |               8 |            4 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------+--------------------+---------------------------------------------+------------------+----------------+
+|                 Clock Signal                 |    Enable Signal   |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
++----------------------------------------------+--------------------+---------------------------------------------+------------------+----------------+
+|  divcntr_reg_n_0_[26]                        |                    |                                             |                1 |              1 |
+|  divcntr_reg_n_0_[26]                        |                    | lsb_counter/count_val_reg[3]_LDC_i_2__0_n_0 |                1 |              1 |
+|  divcntr_reg_n_0_[26]                        |                    | lsb_counter/count_val_reg[3]_LDC_i_1_n_0    |                1 |              1 |
+|  divcntr_reg_n_0_[26]                        |                    | lsb_counter/count_val_reg[2]_LDC_i_2__0_n_0 |                1 |              1 |
+|  divcntr_reg_n_0_[26]                        |                    | lsb_counter/count_val_reg[2]_LDC_i_1_n_0    |                1 |              1 |
+|  divcntr_reg_n_0_[26]                        |                    | lsb_counter/count_val_reg[1]_LDC_i_2__0_n_0 |                1 |              1 |
+|  divcntr_reg_n_0_[26]                        |                    | lsb_counter/count_val_reg[1]_LDC_i_1_n_0    |                1 |              1 |
+|  divcntr_reg_n_0_[26]                        |                    | lsb_counter/count_val_reg[0]_LDC_i_2__0_n_0 |                1 |              1 |
+|  divcntr_reg_n_0_[26]                        |                    | lsb_counter/count_val_reg[0]_LDC_i_1_n_0    |                1 |              1 |
+|  msb_counter/count_val_reg[3]_LDC_i_1__0_n_0 |                    | msb_counter/count_val_reg[3]_LDC_i_2_n_0    |                1 |              1 |
+|  msb_counter/count_val_reg[2]_LDC_i_1__0_n_0 |                    | msb_counter/count_val_reg[2]_LDC_i_2_n_0    |                1 |              1 |
+|  msb_counter/count_val_reg[1]_LDC_i_1__0_n_0 |                    | msb_counter/count_val_reg[1]_LDC_i_2_n_0    |                1 |              1 |
+|  msb_counter/count_val_reg[0]_LDC_i_1__0_n_0 |                    | msb_counter/count_val_reg[0]_LDC_i_2_n_0    |                1 |              1 |
+|  lsb_counter/tc_reg_0                        |                    |                                             |                1 |              1 |
+|  lsb_counter/tc_reg_0                        |                    | msb_counter/count_val_reg[3]_LDC_i_2_n_0    |                1 |              1 |
+|  lsb_counter/tc_reg_0                        |                    | msb_counter/count_val_reg[3]_LDC_i_1__0_n_0 |                1 |              1 |
+|  lsb_counter/tc_reg_0                        |                    | msb_counter/count_val_reg[2]_LDC_i_2_n_0    |                1 |              1 |
+|  lsb_counter/tc_reg_0                        |                    | msb_counter/count_val_reg[2]_LDC_i_1__0_n_0 |                1 |              1 |
+|  lsb_counter/tc_reg_0                        |                    | msb_counter/count_val_reg[1]_LDC_i_2_n_0    |                1 |              1 |
+|  lsb_counter/tc_reg_0                        |                    | msb_counter/count_val_reg[1]_LDC_i_1__0_n_0 |                1 |              1 |
+|  lsb_counter/tc_reg_0                        |                    | msb_counter/count_val_reg[0]_LDC_i_2_n_0    |                1 |              1 |
+|  lsb_counter/tc_reg_0                        |                    | msb_counter/count_val_reg[0]_LDC_i_1__0_n_0 |                1 |              1 |
+|  lsb_counter/count_val_reg[3]_LDC_i_1_n_0    |                    | lsb_counter/count_val_reg[3]_LDC_i_2__0_n_0 |                1 |              1 |
+|  lsb_counter/count_val_reg[2]_LDC_i_1_n_0    |                    | lsb_counter/count_val_reg[2]_LDC_i_2__0_n_0 |                1 |              1 |
+|  lsb_counter/count_val_reg[1]_LDC_i_1_n_0    |                    | lsb_counter/count_val_reg[1]_LDC_i_2__0_n_0 |                1 |              1 |
+|  lsb_counter/count_val_reg[0]_LDC_i_1_n_0    |                    | lsb_counter/count_val_reg[0]_LDC_i_2__0_n_0 |                1 |              1 |
+|  flickclock                                  |                    |                                             |                2 |              2 |
+|  flickclock                                  | bit_out[7]_i_1_n_0 |                                             |                4 |              8 |
+|  clk_IBUF_BUFG                               |                    |                                             |                7 |             27 |
++----------------------------------------------+--------------------+---------------------------------------------+------------------+----------------+
+
+

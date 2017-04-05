@@ -1,0 +1,1 @@
+-wto "903675172f594befa3d5d8f7f1ba86a5" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "centurycounter_behav" "xil_defaultlib.centurycounter" -log "elaborate.log" 

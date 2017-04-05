@@ -1,0 +1,329 @@
+
+*** Running vivado
+    with args -log centurycounter.vds -m64 -mode batch -messageDb vivado.pb -notrace -source centurycounter.tcl
+
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source centurycounter.tcl -notrace
+Command: synth_design -top centurycounter -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 264.691 ; gain = 86.148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'centurycounter' [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/sources_1/new/centurycounter.vhd:47]
+INFO: [Synth 8-3491] module 'decade_counter' declared at 'D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/sources_1/new/decade_counter.vhd:15' bound to instance 'msb_counter' of component 'decade_counter' [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/sources_1/new/centurycounter.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'decade_counter' [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/sources_1/new/decade_counter.vhd:28]
+INFO: [Synth 8-3491] module 'bcd_to_seven_seg' declared at 'D:/dsdlab/friday/250_202/lab1/lab1.srcs/sources_1/new/bcd_to_seven_seg.vhd:34' bound to instance 'bcd_decoder' of component 'bcd_to_seven_seg' [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/sources_1/new/decade_counter.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'bcd_to_seven_seg' [D:/dsdlab/friday/250_202/lab1/lab1.srcs/sources_1/new/bcd_to_seven_seg.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'bcd_to_seven_seg' (1#1) [D:/dsdlab/friday/250_202/lab1/lab1.srcs/sources_1/new/bcd_to_seven_seg.vhd:41]
+WARNING: [Synth 8-614] signal 'clear' is read in the process but is not in the sensitivity list [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/sources_1/new/decade_counter.vhd:50]
+WARNING: [Synth 8-614] signal 'load' is read in the process but is not in the sensitivity list [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/sources_1/new/decade_counter.vhd:50]
+WARNING: [Synth 8-614] signal 'data_in' is read in the process but is not in the sensitivity list [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/sources_1/new/decade_counter.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'decade_counter' (2#1) [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/sources_1/new/decade_counter.vhd:28]
+INFO: [Synth 8-3491] module 'decade_counter' declared at 'D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/sources_1/new/decade_counter.vhd:15' bound to instance 'lsb_counter' of component 'decade_counter' [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/sources_1/new/centurycounter.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'centurycounter' (3#1) [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/sources_1/new/centurycounter.vhd:47]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 299.848 ; gain = 121.305
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 299.848 ; gain = 121.305
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/constrs_1/new/bit_map_counter.xdc]
+WARNING: [Vivado 12-584] No ports matched 'data_in[3]'. [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/constrs_1/new/bit_map_counter.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/constrs_1/new/bit_map_counter.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[2]'. [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/constrs_1/new/bit_map_counter.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/constrs_1/new/bit_map_counter.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[1]'. [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/constrs_1/new/bit_map_counter.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/constrs_1/new/bit_map_counter.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[0]'. [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/constrs_1/new/bit_map_counter.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/constrs_1/new/bit_map_counter.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[3]'. [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/constrs_1/new/bit_map_counter.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/constrs_1/new/bit_map_counter.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[2]'. [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/constrs_1/new/bit_map_counter.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/constrs_1/new/bit_map_counter.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[1]'. [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/constrs_1/new/bit_map_counter.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/constrs_1/new/bit_map_counter.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[0]'. [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/constrs_1/new/bit_map_counter.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/constrs_1/new/bit_map_counter.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/dsdlab/friday/250_202/lab4/lab_4/lab_4.srcs/constrs_1/new/bit_map_counter.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 602.730 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 602.730 ; gain = 424.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 602.730 ; gain = 424.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 602.730 ; gain = 424.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 602.730 ; gain = 424.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  11 Input      8 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module centurycounter 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module bcd_to_seven_seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      8 Bit        Muxes := 1     
+Module decade_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 602.730 ; gain = 424.188
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 602.730 ; gain = 424.188
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 602.730 ; gain = 424.188
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\out_enab_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (\out_enab_reg[7] ) is unused and will be removed from module centurycounter.
+WARNING: [Synth 8-3332] Sequential element (\out_enab_reg[6] ) is unused and will be removed from module centurycounter.
+WARNING: [Synth 8-3332] Sequential element (\out_enab_reg[5] ) is unused and will be removed from module centurycounter.
+WARNING: [Synth 8-3332] Sequential element (\out_enab_reg[4] ) is unused and will be removed from module centurycounter.
+WARNING: [Synth 8-3332] Sequential element (\out_enab_reg[3] ) is unused and will be removed from module centurycounter.
+WARNING: [Synth 8-3332] Sequential element (\out_enab_reg[2] ) is unused and will be removed from module centurycounter.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 602.730 ; gain = 424.188
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 602.730 ; gain = 424.188
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 602.730 ; gain = 424.188
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 602.730 ; gain = 424.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 602.730 ; gain = 424.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 602.730 ; gain = 424.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 602.730 ; gain = 424.188
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 602.730 ; gain = 424.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 602.730 ; gain = 424.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 602.730 ; gain = 424.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 602.730 ; gain = 424.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |    27|
+|4     |LUT2   |     2|
+|5     |LUT3   |    26|
+|6     |LUT5   |     8|
+|7     |LUT6   |    20|
+|8     |MUXF7  |     4|
+|9     |FDCE   |     8|
+|10    |FDPE   |     8|
+|11    |FDRE   |    39|
+|12    |LDC    |     8|
+|13    |IBUF   |    12|
+|14    |OBUF   |    17|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------+-----------------+------+
+|      |Instance      |Module           |Cells |
++------+--------------+-----------------+------+
+|1     |top           |                 |   187|
+|2     |  lsb_counter |decade_counter   |    44|
+|3     |  msb_counter |decade_counter_0 |    40|
++------+--------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 602.730 ; gain = 424.188
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 602.730 ; gain = 84.949
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 602.730 ; gain = 424.188
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  LDC => LDCE: 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 17 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 602.730 ; gain = 392.051
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 602.730 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 10 16:31:42 2017...

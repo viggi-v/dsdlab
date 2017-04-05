@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Jan 20 15:55:36 2017
+# Process ID: 1612
+# Log file: D:/dsdlab/friday/250_202/lab1/lab1.sim/sim_1/behav/webtalk.log
+# Journal file: D:/dsdlab/friday/250_202/lab1/lab1.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source D:/dsdlab/friday/250_202/lab1/lab1.sim/sim_1/behav/xsim.dir/bcd_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1621853103 -regid "174203868_208276356_210637632_521" -xml D:/dsdlab/friday/250_202/lab1/lab1.sim/sim_1/behav/xsim.dir/bcd_..."
+    (file "D:/dsdlab/friday/250_202/lab1/lab1.sim/sim_1/behav/xsim.dir/bcd_tb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Fri Jan 20 15:55:39 2017...

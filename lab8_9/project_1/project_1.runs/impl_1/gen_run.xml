@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1490351013">
+  <File Type="OPT-DCP" Name="twodigit_counter_7segment_opt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="twodigit_counter_7segment_postroute_physopt.dcp"/>
+  <File Type="PA-DCP" Name="twodigit_counter_7segment.dcp"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="PWROPT-DCP" Name="twodigit_counter_7segment_pwropt.dcp"/>
+  <File Type="ROUTE-DCP" Name="twodigit_counter_7segment_routed.dcp"/>
+  <File Type="PA-TCL" Name="twodigit_counter_7segment.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="twodigit_counter_7segment_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="twodigit_counter_7segment.hwdef"/>
+  <File Type="PWROPT-DRC" Name="twodigit_counter_7segment_drc_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="twodigit_counter_7segment_placed.dcp"/>
+  <File Type="PLACE-IO" Name="twodigit_counter_7segment_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="twodigit_counter_7segment_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="twodigit_counter_7segment_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="twodigit_counter_7segment_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="twodigit_counter_7segment_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="twodigit_counter_7segment_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="twodigit_counter_7segment_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="twodigit_counter_7segment_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="twodigit_counter_7segment_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="twodigit_counter_7segment.vdi"/>
+  <File Type="PHYSOPT-DRC" Name="twodigit_counter_7segment_drc_physopted.rpt"/>
+  <File Type="ROUTE-DRC" Name="twodigit_counter_7segment_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="twodigit_counter_7segment_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="twodigit_counter_7segment_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="twodigit_counter_7segment_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="twodigit_counter_7segment_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="twodigit_counter_7segment_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="twodigit_counter_7segment_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="twodigit_counter_7segment_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="twodigit_counter_7segment_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="twodigit_counter_7segment_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="twodigit_counter_7segment_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="twodigit_counter_7segment_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="twodigit_counter_7segment_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="twodigit_counter_7segment_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="twodigit_counter_7segment.bit"/>
+  <File Type="BG-BIN" Name="twodigit_counter_7segment.bin"/>
+  <File Type="BITSTR-MSK" Name="twodigit_counter_7segment.msk"/>
+  <File Type="BITSTR-RBT" Name="twodigit_counter_7segment.rbt"/>
+  <File Type="BITSTR-NKY" Name="twodigit_counter_7segment.nky"/>
+  <File Type="BITSTR-BMM" Name="twodigit_counter_7segment_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="twodigit_counter_7segment.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="twodigit_counter_7segment.sysdef"/>
+  <File Type="BG-BGN" Name="twodigit_counter_7segment.bgn"/>
+  <File Type="BG-DRC" Name="twodigit_counter_7segment.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../lab8-20170323/clk_divider_refresh_rate_2display.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab8-20170323/clk_divider_1hz_behavior.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab8-20170323/bcd27seg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab8-20170323/twodigit_counter_7segment_-_to_be_edited.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="twodigit_counter_7segment"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../lab8-20170323/two_digit_counter_7segment.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/two_digit_temp.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/two_digit_temp.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
+      <Desc>Vivado Implementation Defaults</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="c_counter_binary_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_dig0"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_5MHz"/>
+</GenRun>

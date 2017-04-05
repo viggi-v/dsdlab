@@ -1,0 +1,7 @@
+Running: xsim.dir/bshifter_behav/xsimk.exe -simmode gui -wdb bshifter_behav.wdb -simrunnum 0 -socket 50271
+Design successfully loaded
+Design Loading Memory Usage: 18860 KB (Peak: 18860 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 19216 KB (Peak: 19216 KB)
+Simulation CPU Usage: 62 ms

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1484908081">
+  <File Type="OPT-DCP" Name="bcd_to_seven_seg_opt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="PWROPT-DCP" Name="bcd_to_seven_seg_pwropt.dcp"/>
+  <File Type="ROUTE-DCP" Name="bcd_to_seven_seg_routed.dcp"/>
+  <File Type="PA-TCL" Name="bcd_to_seven_seg.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="bcd_to_seven_seg_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="bcd_to_seven_seg_drc_pwropted.rpt"/>
+  <File Type="OPT-HWDEF" Name="bcd_to_seven_seg.hwdef"/>
+  <File Type="PLACE-DCP" Name="bcd_to_seven_seg_placed.dcp"/>
+  <File Type="PLACE-IO" Name="bcd_to_seven_seg_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="bcd_to_seven_seg_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="bcd_to_seven_seg_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="bcd_to_seven_seg_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="bcd_to_seven_seg_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="bcd_to_seven_seg_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="bcd_to_seven_seg_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="bcd_to_seven_seg_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="bcd_to_seven_seg_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="bcd_to_seven_seg.vdi"/>
+  <File Type="PHYSOPT-DRC" Name="bcd_to_seven_seg_drc_physopted.rpt"/>
+  <File Type="ROUTE-DRC" Name="bcd_to_seven_seg_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="bcd_to_seven_seg_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="bcd_to_seven_seg_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="bcd_to_seven_seg_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="bcd_to_seven_seg_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="bcd_to_seven_seg_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="bcd_to_seven_seg_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="bcd_to_seven_seg_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="bcd_to_seven_seg_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="bcd_to_seven_seg_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="bcd_to_seven_seg_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="bcd_to_seven_seg_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="bcd_to_seven_seg_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="bcd_to_seven_seg_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="bcd_to_seven_seg_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="bcd_to_seven_seg.bit"/>
+  <File Type="BG-BIN" Name="bcd_to_seven_seg.bin"/>
+  <File Type="BITSTR-MSK" Name="bcd_to_seven_seg.msk"/>
+  <File Type="BITSTR-RBT" Name="bcd_to_seven_seg.rbt"/>
+  <File Type="BITSTR-NKY" Name="bcd_to_seven_seg.nky"/>
+  <File Type="BITSTR-BMM" Name="bcd_to_seven_seg_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="bcd_to_seven_seg.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="bcd_to_seven_seg.sysdef"/>
+  <File Type="BG-BGN" Name="bcd_to_seven_seg.bgn"/>
+  <File Type="BG-DRC" Name="bcd_to_seven_seg.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/bcd_to_seven_seg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="bcd_to_seven_seg"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/fulladder_ic.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/fulladder_ic.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

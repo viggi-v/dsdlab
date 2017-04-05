@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../simpson.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.vhd"
+vhdl xil_defaultlib  "../../../simpson.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.vhd"
+vhdl blk_mem_gen_v8_2  "../../../simpson.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.vhd"
+vhdl xil_defaultlib  "../../../simpson.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.vhd"
+vhdl xil_defaultlib  "../../../simpson.srcs/sources_1/new/reader.vhd"
+vhdl xil_defaultlib  "../../../simpson.srcs/sources_1/new/vga_controller.vhd"
+vhdl xil_defaultlib  "../../../simpson.srcs/sources_1/new/mux.vhd"
+vhdl xil_defaultlib  "../../../simpson.srcs/sources_1/new/encryption.vhd"
+vhdl xil_defaultlib  "../../../simpson.srcs/sources_1/new/main_-_to_be_edited.vhd"
+
+# Do not sort compile order
+nosort

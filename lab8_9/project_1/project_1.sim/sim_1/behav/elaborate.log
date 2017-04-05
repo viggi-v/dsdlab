@@ -1,0 +1,49 @@
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 318a198190b34f0e875016e7850bc7f0 --debug typical --relax --mt 2 -L xbip_utils_v3_0 -L c_reg_fd_v12_0 -L xbip_dsp48_wrapper_v3_0 -L xbip_pipe_v3_0 -L xbip_dsp48_addsub_v3_0 -L xbip_addsub_v3_0 -L c_addsub_v12_0 -L c_gate_bit_v12_0 -L xbip_counter_v3_0 -L c_counter_binary_v12_0 -L xil_defaultlib -L secureip --snapshot twodigit_counter_7segment_behav xil_defaultlib.twodigit_counter_7segment -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.numeric_std
+Compiling package c_counter_binary_v12_0.c_counter_binary_v12_0_viv_comp
+Compiling package std.textio
+Compiling package xbip_utils_v3_0.xbip_utils_v3_0_pkg
+Compiling package xbip_counter_v3_0.xbip_counter_v3_0_viv_comp
+Compiling package xbip_counter_v3_0.xbip_counter_v3_0_pkg
+Compiling package c_counter_binary_v12_0.c_counter_binary_v12_0_pkg
+Compiling package c_addsub_v12_0.c_addsub_v12_0_pkg_legacy
+Compiling package c_reg_fd_v12_0.c_reg_fd_v12_0_viv_comp
+Compiling package c_addsub_v12_0.c_addsub_v12_0_pkg
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture structural of entity c_reg_fd_v12_0.c_reg_fd_v12_0_viv [\c_reg_fd_v12_0_viv(4,"0","0",1,...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture rtl of entity c_addsub_v12_0.c_addsub_v12_0_lut6_legacy [\c_addsub_v12_0_lut6_legacy(4,0,...]
+Compiling architecture synth of entity c_addsub_v12_0.c_addsub_v12_0_fabric_legacy [\c_addsub_v12_0_fabric_legacy("a...]
+Compiling architecture synth of entity c_addsub_v12_0.c_addsub_v12_0_legacy [\c_addsub_v12_0_legacy("artix7",...]
+Compiling architecture synth of entity c_counter_binary_v12_0.c_counter_binary_v12_0_legacy [\c_counter_binary_v12_0_legacy("...]
+Compiling architecture synth of entity c_counter_binary_v12_0.c_counter_binary_v12_0_viv [\c_counter_binary_v12_0_viv(0,0,...]
+Compiling architecture xilinx of entity c_counter_binary_v12_0.c_counter_binary_v12_0 [\c_counter_binary_v12_0(0,0,"art...]
+Compiling architecture c_counter_binary_0_arch of entity xil_defaultlib.c_counter_binary_0 [c_counter_binary_0_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF("DONT_CARE","0",true,"AUTO...]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV("OPTIMIZED",32.0,0.0...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.clk_5MHz_clk_wiz [clk_5mhz_clk_wiz_default]
+Compiling architecture xilinx of entity xil_defaultlib.clk_5MHz [clk_5mhz_default]
+Compiling architecture behavior of entity xil_defaultlib.clk_divider_1hz_behavior [clk_divider_1hz_behavior_default]
+Compiling architecture bcd27seg_arch of entity xil_defaultlib.bcd27seg [bcd27seg_default]
+Compiling architecture behavior of entity xil_defaultlib.clk_divider_refresh_rate_2display [clk_divider_refresh_rate_2displa...]
+Compiling architecture behavioral of entity xil_defaultlib.twodigit_counter_7segment
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot twodigit_counter_7segment_behav

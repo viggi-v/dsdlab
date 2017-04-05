@@ -1,0 +1,172 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Mar 31 17:04:31 2017
+# Process ID: 4148
+# Log file: D:/dsdlab/friday/250_202/lab10/simpson/simpson.runs/impl_1/main.vdi
+# Journal file: D:/dsdlab/friday/250_202/lab10/simpson/simpson.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'D:/dsdlab/friday/250_202/lab10/simpson/simpson.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp' for cell 'ROM'
+INFO: [Project 1-454] Reading design checkpoint 'D:/dsdlab/friday/250_202/lab10/simpson/simpson.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp' for cell 'clk_viz'
+INFO: [Netlist 29-17] Analyzing 73 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/dsdlab/friday/250_202/lab10/simpson/simpson.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_viz/U0'
+Finished Parsing XDC File [d:/dsdlab/friday/250_202/lab10/simpson/simpson.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_viz/U0'
+Parsing XDC File [d:/dsdlab/friday/250_202/lab10/simpson/simpson.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_viz/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/dsdlab/friday/250_202/lab10/simpson/simpson.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [d:/dsdlab/friday/250_202/lab10/simpson/simpson.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:56]
+get_clocks: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 931.625 ; gain = 448.102
+Finished Parsing XDC File [d:/dsdlab/friday/250_202/lab10/simpson/simpson.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_viz/U0'
+Parsing XDC File [D:/dsdlab/friday/250_202/lab10/simpson/simpson.srcs/constrs_1/new/pins.xdc]
+Finished Parsing XDC File [D:/dsdlab/friday/250_202/lab10/simpson/simpson.srcs/constrs_1/new/pins.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'D:/dsdlab/friday/250_202/lab10/simpson/simpson.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'D:/dsdlab/friday/250_202/lab10/simpson/simpson.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 931.625 ; gain = 712.742
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 931.625 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 14129d261
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 936.742 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant Propagation | Checksum: 162d85eb7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 936.742 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 160 unconnected nets.
+INFO: [Opt 31-11] Eliminated 14 unconnected cells.
+Phase 3 Sweep | Checksum: 1922e7f30
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.166 . Memory (MB): peak = 936.742 ; gain = 0.000
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 936.742 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1922e7f30
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.168 . Memory (MB): peak = 936.742 ; gain = 0.000
+Implement Debug Cores | Checksum: 1245e1900
+Logic Optimization | Checksum: 1245e1900
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.13 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 7 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 6 Total Ports: 14
+Ending PowerOpt Patch Enables Task | Checksum: 10b52029c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1005.348 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 10b52029c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.966 . Memory (MB): peak = 1005.348 ; gain = 68.605
+INFO: [Common 17-83] Releasing license: Implementation
+30 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1005.348 ; gain = 73.723
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1005.348 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/dsdlab/friday/250_202/lab10/simpson/simpson.runs/impl_1/main_drc_opted.rpt.
+INFO: [#UNDEF] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: 4fb7f8d5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1005.348 ; gain = 0.000
+
+Phase 2 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1005.348 ; gain = 0.000
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1005.348 ; gain = 0.000
+
+Phase 2.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.1 Pre-Place Cells
+Phase 2.1.1 Pre-Place Cells | Checksum: 368a367a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1005.348 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.2 IO & Clk Clean Up
+ERROR: [Place 30-574] Poor placement for routing between an IO pin and BUFG. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.
+	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets down_IBUF] >
+
+	down_IBUF_inst (IBUF.O) is locked to IOB_X1Y65
+	down_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ERROR: [Place 30-574] Poor placement for routing between an IO pin and BUFG. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.
+	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets right_IBUF] >
+
+	right_IBUF_inst (IBUF.O) is locked to IOB_X1Y71
+	right_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y1
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+Phase 2.1.2 IO & Clk Clean Up | Checksum: 368a367a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.882 . Memory (MB): peak = 1005.348 ; gain = 0.000
+Phase 2.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 9791e765
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.883 . Memory (MB): peak = 1005.348 ; gain = 0.000
+Phase 2 Placer Initialization | Checksum: 9791e765
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.884 . Memory (MB): peak = 1005.348 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 9791e765
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.886 . Memory (MB): peak = 1005.348 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+44 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 31 17:05:05 2017...
